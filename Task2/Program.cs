@@ -1,10 +1,12 @@
 ﻿//Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт максимальное из этих чисел.
 
-int a = 2;
-int b = 10;
+Console.Write("Введите первое число: ");
+int a = int.Parse(Console.ReadLine());
+
+Console.Write("Введите первое число: ");
+int b = int.Parse(Console.ReadLine());
 int max = a;
 
-if (a < b) max = b;
+if (b > max) max = b;
 
-Console.Write("max = ");
-Console.WriteLine(max);
+Console.Write("max = " + max);
